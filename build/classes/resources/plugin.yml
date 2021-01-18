@@ -1,5 +1,5 @@
-## YAML Template.
-name: TestPlugin
+name: TeleSpawn
 version: 1.0
-main:  testplugin.Testplugin
+main:  telespawn.TeleSpawn
 api-version: 1.16
+---

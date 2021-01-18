@@ -1,5 +1,14 @@
-## YAML Template.
-name: TestPlugin
+name: TeleSpawn
 version: 1.0
-main:  testplugin.Testplugin
+main: telespawn.TeleSpawn
+commands: 
+    ts:     
+            description: Teleports and sets spawnpoint.
+    tb:
+            description: Teleports to teleblock.
+    tbcreate:
+            description: Creates a teleblock.
+    tblist:
+            description: List all teleblocks.
 api-version: 1.16
+
