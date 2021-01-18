@@ -1,0 +1,5 @@
+## YAML Template.
+name: TestPlugin
+version: 1.0
+main:  testplugin.Testplugin
+api-version: 1.16
