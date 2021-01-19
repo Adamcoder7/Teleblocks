@@ -24,7 +24,7 @@ import org.bukkit.util.permissions.*;
 public class TeleSpawn extends JavaPlugin{
 
 
-   public static final Logger LOG = Logger.getLogger("Minecraft");
+   public static final Logger LOG = Logger.getLogger("Minecraft1");
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] arguments){
         LOG.info("[TeleSpawn]" + label );
