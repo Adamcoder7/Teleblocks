@@ -73,6 +73,7 @@ public class TeleSpawn extends JavaPlugin{
     boolean handleTbcreate(CommandSender sender, String[] arguments){
     if(arguments.length>0){
         LOG.info("[TeleSpawn] creating teleblock");
+        sender.sendMessage("Creating teleblock " + arguments[0]);
         Location senderLocation=((Player) sender).getLocation();
         World world=((Player) sender).getWorld();
         this.getConfig().set("Teleport."+arguments[0]+".location", senderLocation.toVector());
@@ -86,6 +87,7 @@ public class TeleSpawn extends JavaPlugin{
     boolean handleTb(CommandSender sender, String[] arguments){
         if(arguments.length>0){
             LOG.info("[TeleSpawn] teleporting");
+            sender.sendMessage("teleporting to teleblock " + arguments[0]);
             Vector vector =  this.getConfig().getVector("Teleport."+arguments[0]+".location");
             String name =  this.getConfig().getString("Teleport."+arguments[0]+".world");
             World world=Bukkit.getWorld(name);
@@ -97,6 +99,7 @@ public class TeleSpawn extends JavaPlugin{
     
     boolean handleTbList(CommandSender sender) {
         LOG.info("[TeleSpawn] lisiting");
+        sender.sendMessage("Listing all teleblocks");
        Set<String> teleBlocks =  this.getConfig().getConfigurationSection("Teleport").getKeys(false); 
        for(String teleport: teleBlocks) {
            String name =  this.getConfig().getString("Teleport."+teleport+".world");
