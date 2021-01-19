@@ -17,7 +17,6 @@ import org.bukkit.entity.Player;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.bukkit.util.Vector;
 import org.bukkit.util.permissions.*;
-
 /**
  *
  * @author Adam
